@@ -1,0 +1,24 @@
+{
+    "name": "grilar/slug",
+    "description": "Slug/Permalink",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\Slug\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\Slug\\Providers\\SlugServiceProvider"
+            ],
+            "aliases": {
+                "SlugHelper": "Grilar\\Slug\\Facades\\SlugHelper"
+            }
+        }
+    }
+}
